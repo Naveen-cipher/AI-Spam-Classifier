@@ -6,7 +6,7 @@ import csv
 import io
 from pathlib import Path
 
-Automatically install required libraries
+# Automatically install required libraries
 
 required_packages = {
 "pandas": "pandas",
