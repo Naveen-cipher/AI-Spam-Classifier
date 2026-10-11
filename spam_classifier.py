@@ -14,8 +14,9 @@ required_packages = {
 "streamlit": "streamlit",
 }
 
-for module, package in required_packages.items():
-if importlib.util.find_spec(module) is None:
+for module, package in required_libraries.items():
+    if importlib.util.find_spec(module) is None:
+        # Existing code inside this if statement should be indented here
 print(f"Installing {package}...")
 subprocess.check_call(
 [sys.executable, "-m", "pip", "install", package]
